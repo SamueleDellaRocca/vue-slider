@@ -82,6 +82,13 @@ const app = new Vue({
             }
         },
 
+        funzioneDelay() {
+            setInterval(this.funzioneNext, 3000);
+        }
+    },
+
+    created() {
+        this.funzioneDelay()
     }
 
 });
