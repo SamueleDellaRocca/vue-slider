@@ -28,6 +28,7 @@ const app = new Vue({
     el: '#root',
     data: {
 
+        indexArray: 3,
         arrayCarte: [
             {
                 title: 'Svezia',
