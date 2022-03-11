@@ -22,8 +22,8 @@
 			</div>
 
 			<div class="thumbs">
-				<div v-for="(carta,index) in arrayCarte" class="thumb" :class="(index == indexArray) ? 'active' : ''"
-					:data-index="index">
+				<div @click="indexArray = index" v-for="(carta,index) in arrayCarte" class="thumb"
+					:class="(index == indexArray) ? 'active' : ''" :data-index="index">
 					<img :src="`img/${carta.img}`" :alt="carta.title">
 				</div>
 
