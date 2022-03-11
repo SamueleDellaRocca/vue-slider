@@ -28,7 +28,7 @@ const app = new Vue({
     el: '#root',
     data: {
 
-        indexArray: 3,
+        indexArray: 0,
         arrayCarte: [
             {
                 title: 'Svezia',
@@ -61,6 +61,26 @@ const app = new Vue({
             },
 
         ],
+
+    },
+
+    methods: {
+
+        funzioneNext() {
+            if (this.indexArray == 4) {
+                this.indexArray = 0;
+            } else {
+                this.indexArray++
+            }
+        },
+
+        funzionePrevius() {
+            if (this.indexArray == 0) {
+                this.indexArray = 4
+            } else {
+                this.indexArray--
+            }
+        },
 
     }
 

@@ -27,8 +27,8 @@
 					<img :src="`img/${carta.img}`" :alt="carta.title">
 				</div>
 
-				<button class="btn-control btn-previus">&and;</button>
-				<button class="btn-control btn-next">&or;</button>
+				<button @click="funzionePrevius" class=" btn-control btn-previus">&and;</button>
+				<button @click="funzioneNext" class="btn-control btn-next">&or;</button>
 			</div>
 		</div>
 	</div>
